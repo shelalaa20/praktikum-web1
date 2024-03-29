@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+//7. ini adalah cara membuat comand pada JS
+//1. JS where to, dalam html, kode JavaScript disisipkan di antara tag <script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+</script>
+</head>
+<body>
+
+<h2>Demo JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<hr>
+<h1> JavaScript Aritmethic</h1>
+<h2> The + Operator</h2>
+<button type="button" onclick="hasil()">Hitung</button>
+<hr>
+<p id="5"></p><hr>
+<p id="6"></p><hr>
+<p>The indexOf() method returns the position of the first occurrence of a string in a string.</p>
+<p>The position of the first occurrence of "locate" is:</p>
+<p id="8"></p><hr>
+<h1>JavaScript HTML Events</h1>
+<h2>The onclick Attribute</h2>
+<button onclick="document.getElementById('9').innerHTML=Date()">The time is?</button><hr>
+<h2>JavaScript if .. else</h2>
+
+<p>A time-based greeting:</p>
+
+<p id="10"></p>
+<!--9. JS Events adalah "hal" yang terjadi pada elemen HTML. Ketika JavaScript digunakan di halaman HTML, JavaScript dapat "bereaksi" terhadap kejadian ini.-->
+<p id="9"></p>
+<script>
+//3. JS function adalah blok kode yang dirancang untuk melakukan tugas tertentu. Fungsi JavaScript dijalankan ketika "sesuatu" memanggilnya.
+//4. JS arithmetic untuk menghitung pada bilangan literal atau variabel
+  function kali(a, b) {
+    return a * b;
+  }
+  let result = kali(5, 2);
+//2. JS output dapat menampilkan data dengan berbagai cara salah satunya adalah dengan alert
+  function hasil() {
+    alert("hasil a*b=" + result)
+  }
+//5. JS data types dapat menampung semua jenis data.
+let x = 16 + "Volvo";
+document.getElementById("5").innerHTML = x;
+//6. JS Arrays dapat menampung banyak nilai dalam satu nama, sehingga dapat mengakses nilai tersebut dengan mengacu pada nomor indeks.
+const cars = new Array("Saab", "Volvo", "BMW");
+document.getElementById("6").innerHTML = cars;
+//8. Metode ini indexOf()mengembalikan indeks (posisi) kemunculan pertama string dalam sebuah string, atau mengembalikan -1 jika string tidak ditemukan
+let text = "Please locate where 'locate' occurs!";
+let index = text.indexOf("locate");
+document.getElementById("8").innerHTML = index; 
+//10. JS if,else digunakan untuk melakukan tindakan berbeda berdasarkan kondisi berbeda.
+const hour = new Date().getHours(); 
+let greeting;
+
+if (hour < 18) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+
+document.getElementById("10").innerHTML = greeting;
+</script>
+
+</body>
+</html> 

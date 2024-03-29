@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<head>
+    <title>home page</title>
+    <style>
+            table, th, td {
+              border:1px solid black;
+            }
+            </style>
+</head>
+<body style="background-color:darkgray;">
+    <!--1. html heading, judul html ditentukan menggunakan tag <h1> sampe <h6> semakin besar angkanya makan akan semakin kecil -->
+    <!--9. div html, Elemen ini <div>secara default adalah elemen blok, artinya elemen ini mengambil semua lebar yang tersedia, dan dilengkapi dengan jeda baris sebelum dan sesudahnya.-->
+    <div style="background-color:darkorange;text-align:center;">
+    <h1>Selamat Datang!</h1>
+</div>
+    <p style="color:brown;">Semoga hari anda menyenangkan!<br>Silahkan klik link di bawah ini untuk dipelajari.</p>
+    <!--2. html attributs, atribut memberikan informasi tambahan tentang elemen-->
+    <!--tag <img> berfungsi untuk menyematkan gambar,atribut src menentukan jalur ke gambar yang akan ditampilkan.-->
+    <img src="foto1.png" width="400" height="200"><br>
+    <!--tag <a> untuk mendefinisika hyperlink,atribut href untuk menentukan url halaman yang akan dituju link nya.-->
+    <a href="https://www.w3schools.com">Visit W3Schools</a>
+    <!--3. html style digunakan untuk menambahkan style ke suatu elemen, seperti warna, font, ukuran dan lainya. -->
+    <pre style="background-color:cornsilk;text-align:center;">
+    pada w3schools kita dapat mempelajari cara membuat dan mengembangkan web
+    saya menggunakan w3scools untuk praktikum web
+    </pre><hr>
+    <!--4. html formatting berisi beberapa elemen untuk mendefinisikan teks dengan arti khusus.-->
+        <b>	Defines bold text</b><br>
+        <em>Defines emphasized text</em><br>
+        <i>	Defines a part of text in an alternate voice or mood</i><br>
+        <small>	Defines smaller text</small><br>
+        <strong>	Defines important text</strong><br>
+        <sub>	Defines subscripted text</sub>
+        <sup>	Defines superscripted text</sup><br>
+        <ins>	Defines inserted text</ins><br>
+        <del>	Defines deleted text</del><br>
+        <mark>	Defines marked/highlighted text</mark><hr>
+    <!--5. html quotations yaitu memberi sebuah elemen untuk mendefinisikan kutipan-->
+    <abbr>	Defines an abbreviation or acronym</abbr><br>
+    <address>	Defines contact information for the author/owner of a document</address><br>
+    <bdo>	Defines the text direction</bdo><br>
+    <blockquote>	Defines a section that is quoted from another source</blockquote><br>
+    <cite>	Defines the title of a work</cite><br>
+    <q>	Defines a short inline quotation</q>
+    <p style="font-family:'Courier New';">okaiiiii</p>
+    <h1 style="font-size:24px;">Terima kasih</h1>
+</body>
+<body>
+    <!--6. html list digunakan untuk membuat list untuk mengelompokan sekumpulan item terkait dalam daftar.-->
+    <p> Praktikum Pemrograman Web</p>
+    <ul>
+        <li>Tea
+            <ol type="a">
+            <li>Black tea</li>
+            <li>Green tea</li>
+            </ol>
+        </li>
+        <li>Milk
+            <ol type="i">
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ol>
+        </li>
+      </ul>
+      <!--7. html tabel digunakan untuk mengatur data ke dalam baris dan kolom.  -->
+      <h2>Belajar bikin tabel</h2>
+
+<table style="width:100%">
+  <!--setiap baris tabel dimulai dengan <tr> dan diakhiri dengan </tr>, untuk menyatukan beberapa baris menjadi 1 gunakan "rowspan", jika kolom gunakan "colspan".-->
+  <tr>
+    <!--th digunakan untuk membuat sel header tebal-->
+    <th colspan="3">Person 1</th>
+  </tr>
+  <tr>
+    <!--segala sesuatu di antara <td> dan </td> merupakan konten dari sel tabel.-->
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td rowspan="2">Linus</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>14</td>
+  </tr>
+</table>
+<!--8. html code berisi beberapa element untuk mendefinisikan input pengguna dan kode komputer.-->
+<!--10. html colors digunakan unuk memberi warna pada background ataupun teks, diletakan pada bagian style.-->
+<div style="background-color:chocolate; color: white">
+<h2>The code Element</h2>
+<p>Programming code example:</p>
+
+<code>
+x = 5;
+y = 6;
+z = x + y;
+</code><br>
+<kbd> element defines keyboard input</kbd><br>
+<samp> element defines sample output from a computer program</samp><br>
+<code> element defines a piece of computer code</code><br>
+<var> element defines a variable in programming or in a mathematical expression</var><br>
+<pre> element defines preformatted text</pre>
+</div>
+
+</body>
+</html>

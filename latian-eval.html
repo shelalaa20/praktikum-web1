@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--BIKIN TABEL HTML-->
+    <style>
+        table,th,td{
+            border: 1px solid black;
+        }
+      
+#tabel {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tabel td, #tabel th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+#tabel tr:nth-child(even){background-color:aliceblue;}
+
+#tabel tr:hover {background-color:aqua;}
+
+#tabel th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:black;
+  color: white;
+}
+</style>
+    </style>
+</head>
+<body style="background-color:bisque;">
+    <h1>Latihan Evaluasi Praktikum Pemrograman Web 1</h1>
+    <h3>Makanan dan Minuman Kesukaan Shela : </h3>
+    <ol type="A">
+    <li>Makanan</li>
+        <ol type="1">
+        <li>Ayam Goreng</li>
+        <li>Pepes Tahu</li>
+        </ol>
+    <li>Minuman</li>
+        <ol type="i">
+        <li>Es Teh</li>
+        <li>Air Putih</li>
+    </ol>
+</ol>
+<!--tabel html-->
+<table style="width:100%">
+<tr>
+    <th>A</th>
+    <th>B</th>
+</tr>
+<tr>
+    <td id="a">1</td>
+    <td id="b">2</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>4</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td>6</td>
+</tr>
+<tr>
+    <td>7</td>
+    <td>8</td>
+</tr>
+</table><br>
+<table id="tabel">
+    <tr>
+      <th colspan="2" style="text-align: center;">Data Mahasiswa</th>
+    </tr>
+    <tr>
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+    </tr>
+    <tr>
+      <td>Berglunds snabbköp</td>
+      <td>Christina Berglund</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Berglunds snabbköp</td>
+        <td>Christina Berglund</td>
+      </tr>
+      <tr>
+        <td>Christina Berglund</td>
+      </tr>
+      <tr>
+      <td>Christina Berglund</td>
+      <td rowspan="2"><img src="https://i.pinimg.com/736x/bd/06/62/bd06625e8321081fd66ad0f333a35615.jpg" alt=""
+        style="width: 80px;height: 80px;" ></td>
+      </tr>
+      <tr>
+    <td>Christina Berglund</td>
+    </tr>
+</body>
+<script>
+    let a = document.getElementById("a").innerHTML;
+    let b = document.getElementById("b").innerHTML;
+    let hasil = hitung (a,b);
+    document.write("Nilai A adalah =" +a,"<br>");
+    document.write("Nilai B adalah =" +b,"<br>");
+
+    function hitung(a,b){
+        return a*b;
+    }
+    
+    function tampil(){
+        alert("Hasil A+B=" + hasil)
+    }
+</script>
+<button type="button" onclick="tampil()">Hitung</button>
+</html>
